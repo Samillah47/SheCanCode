@@ -18,6 +18,10 @@ public class Pair<K,V> {
         return value; 
     }
 
+    public static <K, V> Pair<K, V> create(K key, V value) {
+        return new Pair<>(key, value);
+    }
+
     @Override
     public String toString() {
         return "(Key: " + key + ", Value: " + value + ")";
@@ -30,4 +34,5 @@ public class Pair<K,V> {
 
     
 }
+
 
